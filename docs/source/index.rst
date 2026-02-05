@@ -7,22 +7,12 @@ Get start
 --------
 
 .. toctree::
-   :maxdepth: 1
 
    installation
-   
-.. toctree::
-   :maxdepth: 1
 
    tutorial
-
-.. toctree::
-   :maxdepth: 1
    
    api
-
-.. toctree::
-   :maxdepth: 1
 
    GitHub <https://github.com/lanshui98/UniST>
 
