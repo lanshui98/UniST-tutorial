@@ -17,7 +17,7 @@ Click any card below to jump to the corresponding tutorial.
          :width: 80%
          :align: center
 
-      .. div:: sd-text-center sd-fs-5
+      .. div:: sd-text-center sd-fs-8
 
          In-plane point cloud upsampling for sparse serial sections.
 
