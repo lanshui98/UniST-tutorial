@@ -24,7 +24,7 @@ Get start
 .. toctree::
    :maxdepth: 1
 
- <https://github.com/lanshui98/UniST>
+   GitHub <https://github.com/lanshui98/UniST>
 
 Overview
 --------
