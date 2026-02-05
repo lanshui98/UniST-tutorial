@@ -10,7 +10,7 @@ Get start
 
    installation
 
-   Tutorial/tutorial
+   tutorial
    
    api
 
