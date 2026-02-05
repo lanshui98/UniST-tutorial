@@ -8,13 +8,18 @@ Click any card below to jump to the corresponding tutorial.
    :gutter: 3
 
    .. grid-item-card::
-      :img-bottom: _static/upsampling.png
       :link: upsampling
       :link-type: doc
 
       **Upsampling**
+      ^^^
+      .. image:: _static/tutorial/upsampling.png
+         :width: 50%
+         :align: center
+      +++
+      .. div:: sd-text-center
 
-      In-plane point cloud upsampling for sparse serial sections.
+         In-plane point cloud upsampling for sparse serial sections.
 
    .. grid-item-card::
       :img-top: _static/interpolation.png
