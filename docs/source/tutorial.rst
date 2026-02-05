@@ -12,12 +12,12 @@ Click any card below to jump to the corresponding tutorial.
       :link-type: doc
 
       **Upsampling**
-      ^^^
+
       .. image:: _static/upsampling.png
-         :width: 50%
+         :width: 80%
          :align: center
-      +++
-      .. div:: sd-text-center
+
+      .. div:: sd-text-center sd-fs-5
 
          In-plane point cloud upsampling for sparse serial sections.
 
