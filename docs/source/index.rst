@@ -1,7 +1,7 @@
 Welcome to UniST documentation!
 ===================================
 
-**UniST** is a Python library for A Unified Computational Framework for 3D Spatial Transcriptomics Reconstruction.
+**UniST** is a Python library for a unified computational framework for reconstructing dense and continuous 3D spatial transcriptomics from sparse serial sections.
 
 .. note::
 
