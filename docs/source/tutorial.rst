@@ -17,7 +17,7 @@ Click any card below to jump to the corresponding tutorial.
       In-plane point cloud upsampling for sparse serial sections.
 
    .. grid-item-card::
-      :img-top: _static/tutorial/interpolation.png
+      :img-top: _static/interpolation.png
       :link: interpolation
       :link-type: doc
 
