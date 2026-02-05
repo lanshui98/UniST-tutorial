@@ -8,7 +8,7 @@ Click any card below to jump to the corresponding tutorial.
    :gutter: 3
 
    .. grid-item-card::
-      :img-top: ../__static/tutorial/upsampling.png
+      :img-top: _static/tutorial/upsampling.png
       :link: upsampling
       :link-type: doc
 
@@ -17,7 +17,7 @@ Click any card below to jump to the corresponding tutorial.
       In-plane point cloud upsampling for sparse serial sections.
 
    .. grid-item-card::
-      :img-top: ../__static/tutorial/interpolation.png
+      :img-top: _static/tutorial/interpolation.png
       :link: interpolation
       :link-type: doc
 
@@ -26,7 +26,7 @@ Click any card below to jump to the corresponding tutorial.
       Slice interpolation across missing z-planes.
 
    .. grid-item-card::
-      :img-top: ../__static/tutorial/gene_imputation.png
+      :img-top: _static/tutorial/gene_imputation.png
       :link: gene_imputation
       :link-type: doc
 
@@ -35,7 +35,7 @@ Click any card below to jump to the corresponding tutorial.
       Continuous gene expression reconstruction via GAE-INR.
 
    .. grid-item-card::
-      :img-top: ../__static/tutorial/real_data.png
+      :img-top: _static/tutorial/real_data.png
       :link: real_data
       :link-type: doc
 
