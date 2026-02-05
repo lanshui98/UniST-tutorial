@@ -1,8 +1,8 @@
 """
-Lumache - Python library for cooks and food lovers.
+UniST
 """
 
-__version__ = "0.1.0"
+__version__ = "latest"
 
 
 class InvalidKindError(Exception):
