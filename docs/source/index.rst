@@ -16,14 +16,6 @@ Get start
 
    GitHub <https://github.com/lanshui98/UniST>
 
-Overview
---------
-
-.. image:: unist_overview.png
-   :width: 800
-   :align: center
-   :alt: UniST overview diagram
-
 .. note::
 
    This tutorial is under active development.
