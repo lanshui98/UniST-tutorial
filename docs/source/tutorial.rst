@@ -8,7 +8,7 @@ Click any card below to jump to the corresponding tutorial.
    :gutter: 3
 
    .. grid-item-card::
-      :img-top: _static/upsampling.png
+      :img-bottom: _static/upsampling.png
       :link: upsampling
       :link-type: doc
 
