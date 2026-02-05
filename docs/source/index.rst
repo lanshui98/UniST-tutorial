@@ -8,8 +8,6 @@ Get start
 
 .. toctree::
 
-   index
-
    installation
 
    tutorial
