@@ -13,7 +13,7 @@ Click any card below to jump to the corresponding tutorial.
 
       **Upsampling**
       ^^^
-      .. image:: _static/tutorial/upsampling.png
+      .. image:: _static/upsampling.png
          :width: 50%
          :align: center
       +++
