@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
+project = 'UniST'
 copyright = '2021, Graziella'
-author = 'Graziella'
+author = 'Lan Shui'
 
-release = '0.1'
-version = '0.1.0'
+release = 'latest'
+version = 'latest'
 
 # -- General configuration
 
