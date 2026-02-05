@@ -1,34 +1,44 @@
 Tutorial
 =====
 
-.. _installation:
+This page provides links to step-by-step tutorials for key components of **UniST**.
+Click any card below to jump to the corresponding tutorial.
 
-Installation
-------------
+.. grid:: 2 3 3 3
+   :gutter: 3
 
-To use Lumache, first install it using pip:
+   .. grid-item-card::
+      :img-top: ../_static/tutorial/upsampling.png
+      :link: upsampling
+      :link-type: doc
 
-.. code-block:: console
+      **Upsampling**
 
-   (.venv) $ pip install lumache
+      In-plane point cloud upsampling for sparse serial sections.
 
-Creating recipes
-----------------
+   .. grid-item-card::
+      :img-top: ../_static/tutorial/interpolation.png
+      :link: interpolation
+      :link-type: doc
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+      **Interpolation**
 
-.. autofunction:: lumache.get_random_ingredients
+      Slice interpolation across missing z-planes.
 
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
+   .. grid-item-card::
+      :img-top: ../_static/tutorial/gene_imputation.png
+      :link: gene_imputation
+      :link-type: doc
 
-.. autoexception:: lumache.InvalidKindError
+      **Gene imputation**
 
-For example:
+      Continuous gene expression reconstruction via GAE-INR.
 
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+   .. grid-item-card::
+      :img-top: ../_static/tutorial/real_data.png
+      :link: real_data
+      :link-type: doc
 
+      **Real data applications**
+
+      UniST on real spatial transcriptomics datasets.
