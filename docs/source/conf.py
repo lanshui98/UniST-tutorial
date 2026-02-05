@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'UniST'
-copyright = '2021, Graziella'
+copyright = '2026, Lan Shui'
 author = 'Lan Shui'
 
 release = 'latest'
