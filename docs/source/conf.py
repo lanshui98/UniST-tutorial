@@ -31,14 +31,6 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 html_theme = 'sphinx_rtd_theme'
-html_logo = "__static/unist_logo.png"
-html_theme_options = {
-    "logo_only": True,
-}
-
-html_css_files = [
-    "__static/custom.css",
-]
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
