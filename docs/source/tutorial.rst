@@ -87,7 +87,7 @@ Click any card below to jump to the corresponding tutorial.
 
       **Pseudo-slices Generation**
 
-      .. image:: _static/morph_operator.png
+      .. image:: _static/morpho_operator.png
          :width: 80%
          :align: center
 
