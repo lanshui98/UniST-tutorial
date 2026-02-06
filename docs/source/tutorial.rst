@@ -51,6 +51,7 @@ Click any card below to jump to the corresponding tutorial.
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
       **Cell Annotation**
+      .. div:: sd-mb-2
 
       .. image:: _static/cell_annotation.png
          :width: 100%
@@ -65,7 +66,7 @@ Click any card below to jump to the corresponding tutorial.
       **Pseudo-slices**
 
       .. image:: _static/pseudo-slices.png
-         :width: 70%
+         :width: 80%
          :align: center
 
    .. grid-item-card::
