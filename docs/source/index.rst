@@ -11,13 +11,6 @@ Get start
    installation
 
    tutorial
-   upsampling
-   interpolation
-   gene_imputation
-   cell_annotation
-   pseudo_slices
-   morpho_operator
-   vis_paraview
 
    api
 
