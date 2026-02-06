@@ -11,7 +11,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: upsampling
       :link-type: doc
 
-      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
       **Upsampling**
 
@@ -23,7 +23,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: interpolation
       :link-type: doc
 
-      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
       **Interpolation**
 
@@ -35,7 +35,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: gene_imputation
       :link-type: doc
 
-      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
       **Gene imputation**
 
@@ -47,7 +47,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: cell_annotation
       :link-type: doc
 
-      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
       **Cell Annotation**
 
@@ -59,7 +59,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: pseudo_slices
       :link-type: doc
 
-      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
       **Pseudo-slices Generation**
 
@@ -71,7 +71,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: morpho_operator
       :link-type: doc
 
-      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
       **Morphological Operators**
 
@@ -83,7 +83,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: vis_paraview
       :link-type: doc
 
-      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
       **ParaView Visualization**
 
