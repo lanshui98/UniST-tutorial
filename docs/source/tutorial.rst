@@ -24,13 +24,20 @@ Click any card below to jump to the corresponding tutorial.
          In-plane point cloud upsampling for sparse serial sections.
 
    .. grid-item-card::
-      :img-top: _static/interpolation.png
       :link: interpolation
       :link-type: doc
 
       **Interpolation**
 
-      Slice interpolation across missing z-planes.
+      .. image:: _static/interpolation.png
+         :width: 80%
+         :align: center
+
+      +++
+
+      .. div:: sd-text-center sd-fs-10
+
+         Slice interpolation across missing z-planes.
 
    .. grid-item-card::
       :img-top: _static/gene_imputation.png
