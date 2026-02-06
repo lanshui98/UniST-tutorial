@@ -61,7 +61,7 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-      **Pseudo-slices Generation**
+      **Pseudo-slices**
 
       .. image:: _static/pseudo-slices.png
          :width: 70%
