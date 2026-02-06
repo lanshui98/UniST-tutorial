@@ -16,7 +16,7 @@ Click any card below to jump to the corresponding tutorial.
       **Upsampling**
 
       .. image:: _static/upsampling.png
-         :width: 100%
+         :width: 90%
          :align: center
 
    .. grid-item-card::
