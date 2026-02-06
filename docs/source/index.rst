@@ -7,12 +7,17 @@ Get start
 --------
 
 .. toctree::
-   :maxdepth: 2
 
    installation
 
    tutorial
-      upsampling
+   upsampling
+   interpolation
+   gene_imputation
+   cell_annotation
+   pseudo_slices
+   morpho_operator
+   vis_paraview
 
    api
 
