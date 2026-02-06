@@ -13,7 +13,8 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-      **Upsampling**
+         **Upsampling**
+
       .. div:: sd-mb-2
 
       .. image:: _static/upsampling.png
@@ -50,7 +51,8 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-      **Cell Annotation**
+         **Cell Annotation**
+
       .. div:: sd-mb-2
 
       .. image:: _static/cell_annotation.png
