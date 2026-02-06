@@ -19,12 +19,6 @@ Click any card below to jump to the corresponding tutorial.
          :width: 80%
          :align: center
 
-      +++
-
-      .. div:: sd-text-center sd-text-muted sd-fs-12
-
-         In-plane point cloud upsampling for sparse serial sections.
-
    .. grid-item-card::
       :link: interpolation
       :link-type: doc
@@ -34,14 +28,8 @@ Click any card below to jump to the corresponding tutorial.
       **Interpolation**
 
       .. image:: _static/interpolation.png
-         :width: 90%
+         :width: 85%
          :align: center
-
-      +++
-
-      .. div:: sd-text-center sd-text-muted sd-fs-12
-
-         Slice interpolation across missing z-planes.
 
    .. grid-item-card::
       :link: gene_imputation
@@ -55,12 +43,6 @@ Click any card below to jump to the corresponding tutorial.
          :width: 80%
          :align: center
 
-      +++
-
-      .. div:: sd-text-center sd-text-muted sd-fs-12
-
-      Continuous gene expression reconstruction via GAE-INR.
-
    .. grid-item-card::
       :link: cell_annotation
       :link-type: doc
@@ -73,12 +55,6 @@ Click any card below to jump to the corresponding tutorial.
          :width: 80%
          :align: center
 
-      +++
-
-      .. div:: sd-text-center sd-text-muted sd-fs-12
-
-      Cell Annotation leveraging GAE-INR reconstructed 3D gene expression.
-
    .. grid-item-card::
       :link: pseudo_slices
       :link-type: doc
@@ -88,14 +64,8 @@ Click any card below to jump to the corresponding tutorial.
       **Pseudo-slices Generation**
 
       .. image:: _static/pseudo-slices.png
-         :width: 80%
+         :width: 70%
          :align: center
-
-      +++
-
-      .. div:: sd-text-center sd-text-muted sd-fs-12
-
-      Multi-planar virtual sectioning at arbitrary orientations.
 
    .. grid-item-card::
       :link: morpho_operator
@@ -103,17 +73,11 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
 
-      **Morphological Operator**
+      **Morphological Operators**
 
       .. image:: _static/morpho_operator.png
          :width: 80%
          :align: center
-
-      +++
-
-      .. div:: sd-text-center sd-text-muted sd-fs-12
-
-      Including closing, opening, erosion, and dilation.
 
    .. grid-item-card::
       :link: vis_paraview
@@ -126,10 +90,3 @@ Click any card below to jump to the corresponding tutorial.
       .. image:: _static/vis_paraview.png
          :width: 80%
          :align: center
-
-      +++
-
-      .. div:: sd-text-center sd-text-muted sd-fs-12
-
-      Interactive exploration and rendering with ParaView
-
