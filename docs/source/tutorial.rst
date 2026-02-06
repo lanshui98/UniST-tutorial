@@ -30,7 +30,7 @@ Click any card below to jump to the corresponding tutorial.
          **Interpolation**
 
       .. image:: _static/interpolation.png
-         :width: 100%
+         :width: 90%
          :align: center
 
    .. grid-item-card::
