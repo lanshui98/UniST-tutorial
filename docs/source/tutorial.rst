@@ -11,6 +11,8 @@ Click any card below to jump to the corresponding tutorial.
       :link: upsampling
       :link-type: doc
 
+      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
+
       **Upsampling**
 
       .. image:: _static/upsampling.png
@@ -19,13 +21,15 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
-      .. div:: sd-text-center sd-fs-10
+      .. div:: sd-text-center sd-text-muted sd-fs-12
 
          In-plane point cloud upsampling for sparse serial sections.
 
    .. grid-item-card::
       :link: interpolation
       :link-type: doc
+
+      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
 
       **Interpolation**
 
@@ -35,13 +39,15 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
-      .. div:: sd-text-center sd-fs-10
+      .. div:: sd-text-center sd-text-muted sd-fs-12
 
          Slice interpolation across missing z-planes.
 
    .. grid-item-card::
       :link: gene_imputation
       :link-type: doc
+
+      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
 
       **Gene imputation**
 
@@ -51,13 +57,15 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
-      .. div:: sd-text-center sd-fs-10
+      .. div:: sd-text-center sd-text-muted sd-fs-12
 
       Continuous gene expression reconstruction via GAE-INR.
 
    .. grid-item-card::
       :link: cell_annotation
       :link-type: doc
+
+      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
 
       **Cell Annotation**
 
@@ -67,13 +75,15 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
-      .. div:: sd-text-center sd-fs-10
+      .. div:: sd-text-center sd-text-muted sd-fs-12
 
       Cell Annotation leveraging GAE-INR reconstructed 3D gene expression.
 
    .. grid-item-card::
       :link: pseudo_slices
       :link-type: doc
+
+      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
 
       **Pseudo-slices Generation**
 
@@ -83,13 +93,15 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
-      .. div:: sd-text-center sd-fs-10
+      .. div:: sd-text-center sd-text-muted sd-fs-12
 
       Multi-planar virtual sectioning at arbitrary orientations.
 
    .. grid-item-card::
       :link: morpho_operator
       :link-type: doc
+
+      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
 
       **Morphological Operator**
 
@@ -99,13 +111,15 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
-      .. div:: sd-text-center sd-fs-10
+      .. div:: sd-text-center sd-text-muted sd-fs-12
 
       Including closing, opening, erosion, and dilation.
 
    .. grid-item-card::
       :link: vis_paraview
       :link-type: doc
+
+      .. div:: sd-font-weight-bold sd-fs-5 sd-text-center sd-mb-3
 
       **ParaView Visualization**
 
@@ -115,7 +129,7 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
-      .. div:: sd-text-center sd-fs-10
+      .. div:: sd-text-center sd-text-muted sd-fs-12
 
       Interactive exploration and rendering with ParaView
 
