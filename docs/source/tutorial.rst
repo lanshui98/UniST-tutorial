@@ -91,7 +91,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: morpho_operator
       :link-type: doc
 
-      **Pseudo-slices Generation**
+      **Morphological Operator**
 
       .. image:: _static/morpho_operator.png
          :width: 80%
@@ -107,7 +107,7 @@ Click any card below to jump to the corresponding tutorial.
       :link: vis_paraview
       :link-type: doc
 
-      **Paraview Visualization**
+      **ParaView Visualization**
 
       .. image:: _static/vis_paraview.png
          :width: 80%
