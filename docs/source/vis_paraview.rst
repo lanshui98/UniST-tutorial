@@ -1,3 +1,3 @@
 ParaView Visualization
 ====
-This tutorial includes how to perform visualizations in Paraview.
+This tutorial includes interactive exploration and rendering with ParaView.
