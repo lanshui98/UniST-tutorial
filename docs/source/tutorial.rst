@@ -51,6 +51,8 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
+      .. div:: sd-text-center sd-fs-10
+
       Continuous gene expression reconstruction via GAE-INR.
 
    .. grid-item-card::
@@ -64,6 +66,8 @@ Click any card below to jump to the corresponding tutorial.
          :align: center
 
       +++
+
+      .. div:: sd-text-center sd-fs-10
 
       Cell Annotation leveraging GAE-INR reconstructed 3D gene expression.
 
@@ -79,6 +83,8 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
+      .. div:: sd-text-center sd-fs-10
+
       Multi-planar virtual sectioning at arbitrary orientations.
 
    .. grid-item-card::
@@ -93,6 +99,8 @@ Click any card below to jump to the corresponding tutorial.
 
       +++
 
+      .. div:: sd-text-center sd-fs-10
+
       Including closing, opening, erosion, and dilation.
 
    .. grid-item-card::
@@ -106,6 +114,8 @@ Click any card below to jump to the corresponding tutorial.
          :align: center
 
       +++
+
+      .. div:: sd-text-center sd-fs-10
 
       Interactive exploration and rendering with ParaView
 
