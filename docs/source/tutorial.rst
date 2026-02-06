@@ -30,7 +30,7 @@ Click any card below to jump to the corresponding tutorial.
       **Interpolation**
 
       .. image:: _static/interpolation.png
-         :width: 80%
+         :width: 90%
          :align: center
 
       +++
@@ -40,11 +40,16 @@ Click any card below to jump to the corresponding tutorial.
          Slice interpolation across missing z-planes.
 
    .. grid-item-card::
-      :img-top: _static/gene_imputation.png
       :link: gene_imputation
       :link-type: doc
 
       **Gene imputation**
+
+      .. image:: _static/gene_imputation.png
+         :width: 80%
+         :align: center
+
+      +++
 
       Continuous gene expression reconstruction via GAE-INR.
 
