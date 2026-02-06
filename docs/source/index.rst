@@ -7,11 +7,13 @@ Get start
 --------
 
 .. toctree::
+   :maxdepth: 2
 
    installation
 
    tutorial
-   
+      upsampling
+
    api
 
    GitHub <https://github.com/lanshui98/UniST>
