@@ -27,7 +27,7 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-      **Interpolation**
+         **Interpolation**
 
       .. image:: _static/interpolation.png
          :width: 100%
@@ -39,7 +39,7 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-      **Gene imputation**
+         **Gene imputation**
 
       .. image:: _static/gene_expression.png
          :width: 100%
@@ -65,7 +65,7 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-      **Pseudo-slices**
+         **Pseudo-slices**
 
       .. image:: _static/pseudo-slices.png
          :width: 80%
@@ -77,7 +77,7 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-      **Morphological Operators**
+         **Morphological Operators**
 
       .. image:: _static/morpho_operator.png
          :width: 80%
@@ -89,7 +89,7 @@ Click any card below to jump to the corresponding tutorial.
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-      **ParaView Visualization**
+         **ParaView Visualization**
 
       .. image:: _static/vis_paraview.png
          :width: 70%
