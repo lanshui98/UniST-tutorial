@@ -17,7 +17,7 @@ Click any card below to jump to the corresponding tutorial.
          :width: 80%
          :align: center
 
-     ｜
+      +++
 
       .. div:: sd-text-center sd-fs-10
 
