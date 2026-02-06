@@ -16,7 +16,7 @@ Click any card below to jump to the corresponding tutorial.
       **Upsampling**
 
       .. image:: _static/upsampling.png
-         :width: 80%
+         :width: 100%
          :align: center
 
    .. grid-item-card::
@@ -28,7 +28,7 @@ Click any card below to jump to the corresponding tutorial.
       **Interpolation**
 
       .. image:: _static/interpolation.png
-         :width: 85%
+         :width: 100%
          :align: center
 
    .. grid-item-card::
@@ -40,7 +40,7 @@ Click any card below to jump to the corresponding tutorial.
       **Gene imputation**
 
       .. image:: _static/gene_expression.png
-         :width: 80%
+         :width: 100%
          :align: center
 
    .. grid-item-card::
@@ -52,7 +52,7 @@ Click any card below to jump to the corresponding tutorial.
       **Cell Annotation**
 
       .. image:: _static/cell_annotation.png
-         :width: 80%
+         :width: 100%
          :align: center
 
    .. grid-item-card::
@@ -88,5 +88,5 @@ Click any card below to jump to the corresponding tutorial.
       **ParaView Visualization**
 
       .. image:: _static/vis_paraview.png
-         :width: 80%
+         :width: 70%
          :align: center
