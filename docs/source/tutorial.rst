@@ -45,7 +45,7 @@ Click any card below to jump to the corresponding tutorial.
 
       **Gene imputation**
 
-      .. image:: _static/gene_imputation.png
+      .. image:: _static/gene_expression.png
          :width: 80%
          :align: center
 
@@ -54,10 +54,58 @@ Click any card below to jump to the corresponding tutorial.
       Continuous gene expression reconstruction via GAE-INR.
 
    .. grid-item-card::
-      :img-top: _static/real_data.png
-      :link: real_data
+      :link: cell_annotation
       :link-type: doc
 
-      **Real data applications**
+      **Cell Annotation**
 
-      UniST on real spatial transcriptomics datasets.
+      .. image:: _static/cell_annotation.png
+         :width: 80%
+         :align: center
+
+      +++
+
+      Cell Annotation leveraging GAE-INR reconstructed 3D gene expression.
+
+   .. grid-item-card::
+      :link: pseudo_slices
+      :link-type: doc
+
+      **Pseudo-slices Generation**
+
+      .. image:: _static/pseudo-slices.png
+         :width: 80%
+         :align: center
+
+      +++
+
+      Multi-planar virtual sectioning at arbitrary orientations.
+
+   .. grid-item-card::
+      :link: morpho_operator
+      :link-type: doc
+
+      **Pseudo-slices Generation**
+
+      .. image:: _static/morph_operator.png
+         :width: 80%
+         :align: center
+
+      +++
+
+      Including closing, opening, erosion, and dilation.
+
+   .. grid-item-card::
+      :link: vis_paraview
+      :link-type: doc
+
+      **Paraview Visualization**
+
+      .. image:: _static/vis_paraview.png
+         :width: 80%
+         :align: center
+
+      +++
+
+      Interactive exploration and rendering with ParaView
+
