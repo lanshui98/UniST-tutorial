@@ -1,8 +1,11 @@
-.rst-content .cell_output .output {
+/* Fix myst-nb output scrolling */
+
+.rst-content .cell_output .highlight {
     max-height: 400px;
     overflow-y: auto !important;
 }
 
-.cell_output .output {
-    background: rgba(255,0,0,0.05);
+/* Prevent pre from expanding parent */
+.rst-content .cell_output .highlight pre {
+    margin: 0;
 }
