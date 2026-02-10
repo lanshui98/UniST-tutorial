@@ -1,4 +1,11 @@
-.rst-content .output pre {
+/* Scroll notebook outputs */
+.cell_output .output {
     max-height: 400px;
     overflow-y: auto;
+    border-radius: 6px;
+}
+
+/* Optional: smooth scroll */
+.cell_output .output::-webkit-scrollbar {
+    width: 6px;
 }
