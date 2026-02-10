@@ -1,9 +1,4 @@
-div.nboutput .output_area {
-    max-height: 400px;
-    overflow-y: auto;
-}
-
-div.cell_output {
+.rst-content .output pre {
     max-height: 400px;
     overflow-y: auto;
 }
