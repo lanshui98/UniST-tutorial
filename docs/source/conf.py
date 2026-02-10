@@ -40,3 +40,6 @@ html_logo = "_static/unist_logo.png"
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
+
+def setup(app):
+    app.add_css_file("custom.css")
