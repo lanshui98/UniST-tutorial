@@ -26,7 +26,7 @@ Put the adata under `external/SUICA_pro/data/`.
 !pip install scanpy
 import scanpy as sc
 
-adata = sc.read('path to 3d adata')
+adata = sc.read('data/3D_data.h5ad')
 genes = adata.var_names
 ```
 
@@ -90,7 +90,31 @@ For more 3D visualization/animation details, please go to [Animation](https://un
 
 #### Visualize the embeddings
 ```
+emb = sc.read('logs/GAE-3D-sparse/3d_sparse/lightning_logs/version_0/embedded-all.h5ad')
+emb.obs["emb1"] = emb.obsm["embeddings"][:, 0]
 
+pc, cmap = st.tdr.construct_pc(
+    adata=emb,
+    spatial_key="spatial",
+    groupby="emb1", 
+    colormap="viridis_r",
+)
+
+st.pl.three_d_plot(
+    model=pc,
+    key="emb1",              
+    colormap="viridis_r",        
+    model_style="points",
+    model_size=4.0,
+    show_legend=True,
+    jupyter="trame",
+    opacity=0.5
+)
+```
+
+```{figure} figs/3D_emb1.png
+:width: 70%
+:align: center
 ```
 
 These parameters are used to handle **sparse z-direction in 3D spatial transcriptomics data** (e.g., when slice spacing is large).
