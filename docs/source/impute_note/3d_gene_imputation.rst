@@ -31,8 +31,11 @@ import scanpy as sc
 
 adata = sc.read('path to 3d adata')
 genes = adata.var_names
+```
 
-# Example: get the index of gene "Myl2"
+Example: get the index of gene "Myl2"
+
+```
 gene_idx = genes.get_loc("Myl2")
 print(gene_idx)
 ```
@@ -65,12 +68,13 @@ st.pl.three_d_plot(
     model_style="points",
     model_size=4.0,
     show_legend=True,
-    jupyter="trame", # "static" for static image, "trame" for interactive window (need to install `nest_asyncio2`)
+    jupyter="trame",
     opacity=0.5,
     )
 ```
-
 <img src="https://github.com/lanshui98/UniST-tutorial/docs/source/impute_note/figs/3D_gene1.png">
+
+"static" for static image, "trame" for interactive window (need to install `nest_asyncio2`).
 
 For more 3D visualization/animation details, please go to [Animation]('https://unist-tutorial.readthedocs.io/en/latest/tutorial.html').
 
@@ -87,6 +91,7 @@ For more 3D visualization/animation details, please go to [Animation]('https://u
 ```
                                                                       
 #### Step3: Prediction/Imputation
+
 Prepare normalized custom coords
 
 ```
@@ -94,11 +99,13 @@ Prepare normalized custom coords
 ```
 
 Run prediction
+
 ```
 ! python predict.py --mode inr --conf ./configs/ST/inr_pred_3d_sparse.yaml       
 ```
 
 Map reconstructed coords back to original space
+
 ```
 ! python map_coords_back.py --reconstructed reconstructed-custom-3d.h5ad --reference data/3D_data.h5ad --output reconstructed-original-3d.h5ad --mode 3d --keep_ratio True --preserve_z_scale True --z_scale_factor 1.5
 ```
