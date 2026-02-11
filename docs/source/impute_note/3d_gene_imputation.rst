@@ -1,5 +1,5 @@
 Gene Imputation (3D)
-----
+====
 
 .. note::
 
