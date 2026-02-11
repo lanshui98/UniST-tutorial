@@ -69,7 +69,7 @@ st.pl.three_d_plot(
     opacity=0.5
 )
 ```
-![3D Gene Visualization](https://github.com/lanshui98/UniST-tutorial/docs/source/impute_note/figs/3D_gene1.png)
+![3D Gene Visualization](https://github.com/lanshui98/UniST-tutorial/main/docs/source/impute_note/figs/3D_gene1.png)
 
 - `"static"` for static image
 - `"trame"` for interactive window (need to install `nest_asyncio2`)
