@@ -69,7 +69,7 @@ st.pl.three_d_plot(
     opacity=0.5
 )
 ```
-![3D Gene Visualization](https://github.com/lanshui98/UniST-tutorial/main/docs/source/impute_note/figs/3D_gene1.png)
+![3D Gene Visualization](https://github.com/lanshui98/UniST-tutorial/tree/main/docs/source/impute_note/figs/3D_gene1.png)
 
 - `"static"` for static image
 - `"trame"` for interactive window (need to install `nest_asyncio2`)
@@ -157,27 +157,27 @@ Used during coordinate normalization to preserve z-direction scale:
 ! python train.py --mode embedder --conf ./configs/ST/embedder_gae_3d_sparse.yaml
 ```
 
-#### Step2: Train INR + fine-tune GAE
+# Step2: Train INR + fine-tune GAE
 
 ```
 ! python train.py --mode inr --conf ./configs/ST/inr_embd_3d_sparse.yaml
 ```
                                                                       
-#### Step3: Prediction/Imputation
+# Step3: Prediction/Imputation
 
-Prepare normalized custom coords
+#### Prepare normalized custom coords
 
 ```
 ! python prepare_custom_coords.py --mode 3d --reference data/3D_data.h5ad --coords your_coords.xyz --output data/preprocessed_data/custom_coords_3d_norm.npy --keep_ratio True --preserve_z_scale True --z_scale_factor 1.5
 ```
 
-Run prediction
+#### Run prediction
 
 ```
 ! python predict.py --mode inr --conf ./configs/ST/inr_pred_3d_sparse.yaml       
 ```
 
-Map reconstructed coords back to original space
+#### Map reconstructed coords back to original space
 
 ```
 ! python map_coords_back.py --reconstructed reconstructed-custom-3d.h5ad --reference data/3D_data.h5ad --output reconstructed-original-3d.h5ad --mode 3d --keep_ratio True --preserve_z_scale True --z_scale_factor 1.5
