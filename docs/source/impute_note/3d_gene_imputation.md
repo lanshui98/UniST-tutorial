@@ -88,6 +88,11 @@ For more 3D visualization/animation details, please go to [Animation](https://un
 ! python train.py --mode embedder --conf ./configs/ST/embedder_gae_3d_sparse.yaml
 ```
 
+#### Visualize the embeddings
+```
+
+```
+
 These parameters are used to handle **sparse z-direction in 3D spatial transcriptomics data** (e.g., when slice spacing is large).
 
 ##### `use_anisotropic_knn: True`
@@ -174,4 +179,14 @@ These parameters are used to handle **sparse z-direction in 3D spatial transcrip
 
 ```
 ! python map_coords_back.py --reconstructed reconstructed-custom-3d.h5ad --reference data/3D_data.h5ad --output reconstructed-original-3d.h5ad --mode 3d --keep_ratio True --preserve_z_scale True --z_scale_factor 1.5
+```
+
+#### Visualize the fitted embeddings
+```
+
+```
+
+#### Visualize the result
+```
+
 ```
