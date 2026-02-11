@@ -54,8 +54,10 @@ pc, cmap = st.tdr.construct_pc(
     spatial_key="spatial",
     groupby="gene1", 
     colormap="hot_r", 
-)
+   )
+```
 
+```
 st.pl.three_d_plot(
     model=pc,
     key="Myl2",  
@@ -65,8 +67,9 @@ st.pl.three_d_plot(
     show_legend=True,
     jupyter="trame", # "static" for static image, "trame" for interactive window (need to install `nest_asyncio2`)
     opacity=0.5,
-)
+    )
 ```
+
 <img src="https://github.com/lanshui98/UniST-tutorial/docs/source/impute_note/figs/3D_gene1.png">
 
 For more 3D visualization/animation details, please go to [Animation]('https://unist-tutorial.readthedocs.io/en/latest/tutorial.html').
