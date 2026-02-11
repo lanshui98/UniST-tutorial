@@ -4,8 +4,6 @@
 The 3D Gene Imputation is computationally intensive and may require several hours to complete, depending on dataset size and hardware configuration.
 ```
 
-### Installation
-
 ```
 !git clone https://github.com/lanshui98/UniST.git
 %cd UniST
@@ -20,7 +18,7 @@ Put the adata under `external/SUICA_pro/data/`.
 %cd external/SUICA_pro
 ```
 
-### Read the Data
+## Read the Data
 
 ```
 !pip install scanpy
