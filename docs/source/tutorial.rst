@@ -94,3 +94,15 @@ Click any card below to jump to the corresponding tutorial.
       .. image:: _static/vis_paraview.png
          :width: 70%
          :align: center
+
+   .. grid-item-card::
+      :link: animation
+      :link-type: doc
+
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
+
+         **Animation**
+
+      .. image:: _static/animation.png
+         :width: 70%
+         :align: center
