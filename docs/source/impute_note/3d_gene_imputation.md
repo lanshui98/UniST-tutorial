@@ -117,7 +117,9 @@ st.pl.three_d_plot(
 :align: center
 ```
 
-These parameters are used to handle **sparse z-direction in 3D spatial transcriptomics data** (e.g., when slice spacing is large).
+Notice how the z-axis is **amplified** here.
+
+Certain parameters are set to handle sparse z-direction in 3D spatial transcriptomics data (e.g., when slice spacing is large).
 
 ##### `use_anisotropic_knn: True`
 - **Meaning**: Whether to use anisotropic KNN graph construction
@@ -184,7 +186,68 @@ These parameters are used to handle **sparse z-direction in 3D spatial transcrip
 ```
 ! python train.py --mode inr --conf ./configs/ST/inr_embd_3d_sparse.yaml
 ```
-                                                                      
+
+Fourier Feature Encoding Parameters for sparse z-direction:
+
+##### `encoding_scales: [1, 10, 100]`
+- **Meaning**: Multi-scale frequency bands for Fourier feature encoding
+- **Effect**: 
+  - Each scale creates a separate frequency encoding
+  - `[1, 10, 100]` means three frequency bands: low (1), medium (10), and high (100)
+  - Higher scales capture finer details, lower scales capture global patterns
+- **Principle**:
+  ```
+  For each scale s in [1, 10, 100]:
+    - Generate random matrix B with scale s
+    - Encode: sin(2π * x @ B), cos(2π * x @ B)
+    - Concatenate all encodings
+  ```
+- **Why multiple scales?**
+  - Single scale can only capture one frequency range
+  - Multi-scale captures both global (scale=1) and local (scale=100) patterns
+  - Better representation for complex spatial structures
+
+##### `anisotropic_3d: True`
+- **Meaning**: Use different frequency encodings for xy-directions and z-direction
+- **Effect**:
+  - `True`: xy-directions and z-direction are encoded **separately** with different frequencies
+  - `False`: All directions use the same encoding frequencies
+- **Why needed?**
+  - z-direction is sparse (large slice spacing)
+  - z-direction needs **lower frequencies** to capture slice-level patterns
+  - xy-directions need **higher frequencies** to capture within-slice details
+- **Implementation** (see `external/SUICA_pro/networks/ffn.py`, lines 68-83):
+  ```python
+  if anisotropic_3d:
+      # xy-direction encoding (first 2 dimensions)
+      xy_encodings = [GaussianEncoding(2, mapping_size, scale=s) 
+                      for s in encoding_scales]  # [1, 10, 100]
+      
+      # z-direction encoding (3rd dimension)  
+      z_encodings = [GaussianEncoding(1, mapping_size, scale=s)
+                     for s in z_scales]  # [0.1, 1.0, 10.0]
+  ```
+
+##### `z_scales: [0.1, 1.0, 10.0]`
+- **Meaning**: Frequency scales specifically for z-direction encoding
+- **Effect**:
+  - Only used when `anisotropic_3d=True`
+  - z-direction uses these scales instead of `encoding_scales`
+  - Typically **lower** than xy-direction scales (because z is sparse)
+- **Comparison with `encoding_scales`**:
+  ```
+  xy-direction: encoding_scales = [1, 10, 100]     (higher frequencies)
+  z-direction:  z_scales = [0.1, 1.0, 10.0]        (lower frequencies)
+  
+  Ratio: z_scales are approximately 10x lower than encoding_scales
+  → z-direction uses 10x lower frequencies
+  → Captures slice-level patterns, not fine z-direction details
+  ```
+- **Why lower frequencies for z?**
+  - z-direction is sparse: large distances between slices
+  - High frequencies would create noise between distant slices
+  - Low frequencies capture smooth variations across slices
+                                                                 
 ## Step3: Prediction/Imputation
 
 #### Prepare normalized custom coords
