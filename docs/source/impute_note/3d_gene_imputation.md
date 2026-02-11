@@ -92,16 +92,13 @@ These parameters are used to handle **sparse z-direction in 3D spatial transcrip
 
 ##### `use_anisotropic_knn: True`
 - **Meaning**: Whether to use anisotropic KNN graph construction
-- **Effect**: 
-  - `True`: Use anisotropic method, accounting for differences between z-direction and xy-directions
-  - `False`: Use standard KNN with equal weights for all directions
 
 ##### `z_weight: 2.0`
 - **Meaning**: Weight factor for z-direction
 - **Effect**: 
   - `> 1`: **Reduces** the influence of z-direction distance
   - Calculation: `weighted_z = z / z_weight`
-  - For example, `z_weight=2.0` means z-direction distance is **halved**, making z-direction points more likely to become neighbors
+  - For example, `z_weight=2.0` means z-direction distance is halved, making z-direction points more likely to become neighbors
 - **Principle**: 
   ```
   Original distance: d = sqrt((x1-x2)² + (y1-y2)² + (z1-z2)²)
@@ -115,7 +112,6 @@ These parameters are used to handle **sparse z-direction in 3D spatial transcrip
   - Numeric value: Manually set maximum z-distance (in original coordinate units)
 - **Principle**: 
   - Even after weighting, if two points are too far apart in z-direction, they should not be connected
-  - For example: points from slice 1 and slice 10 should not be directly connected, even if xy-distance is close
 - **Example**:
   ```
   # If z_range = 1000 (from z=0 to z=1000)
@@ -124,32 +120,29 @@ These parameters are used to handle **sparse z-direction in 3D spatial transcrip
   ```
 
 ##### `preserve_z_scale: True`
-- **Meaning**: Whether to preserve original z-direction scale
 - **Effect**:
-  - `True`: z-direction is **not compressed**, maintaining a relatively larger range
+  - `True`: z-direction is not compressed, maintaining a relatively larger range
   - `False`: z-direction is compressed together with xy-directions to the same range
 - **Principle**:
   ```
-  # preserve_z_scale = False (default)
+  # preserve_z_scale = False
   # All directions compressed to [-1, 1], maintaining aspect ratio
   scale_x = x_range / max(x_range, y_range, z_range)
   scale_y = y_range / max(x_range, y_range, z_range)
-  scale_z = z_range / max(x_range, y_range, z_range)  # z is compressed
+  scale_z = z_range / max(x_range, y_range, z_range)
   
   # preserve_z_scale = True
   # z-direction maintains larger range, not compressed
   scale_x = x_range / max(x_range, y_range)
   scale_y = y_range / max(x_range, y_range)
-  scale_z = z_scale_factor  # z uses amplification factor
+  scale_z = z_scale_factor
   ```
-- **Use Case**: When z-direction is sparse, preserve z-direction importance
 
 ##### `z_scale_factor: 1.5`
 - **Meaning**: Scaling factor for z-direction (only effective when `preserve_z_scale=True`)
 - **Effect**:
   - `= 1.0`: z-direction maintains original relative scale
   - `> 1.0`: **Amplifies** z-direction importance (recommended for sparse z-direction)
-  - `< 1.0`: Reduces z-direction importance (not recommended)
 - **Principle**:
   ```
   normalized_z = (z - z_min) / z_range  # Normalize to [0,1]
