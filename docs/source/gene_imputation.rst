@@ -7,14 +7,8 @@ predicted and ground-truth gene expression.
    :maxdepth: 1
    :caption: Contents:
 
-   Gene imputation on 2D spatial transcriptomics data
-   ------------------------------------------------
-   impute_note/2d_gene_imputation
+   Gene imputation on 2D spatial transcriptomics data <impute_note/2d_gene_imputation>
 
-   Gene imputation on 3D spatial transcriptomics data
-   ------------------------------------------------
-   impute_note/3d_gene_imputation
+   Gene imputation on 3D spatial transcriptomics data <impute_note/3d_gene_imputation>
 
-   Accuracy quantification
-   ------------------------------------------------
-   impute_note/quantification
+   Accuracy quantification <impute_note/quantification>
