@@ -4,7 +4,7 @@
 The 3D Gene Imputation is computationally intensive and may require several hours to complete, depending on dataset size and hardware configuration.
 ```
 
-## Installation
+### Installation
 
 ```
 !git clone https://github.com/lanshui98/UniST.git
@@ -20,7 +20,7 @@ Put the adata under `external/SUICA_pro/data/`.
 %cd external/SUICA_pro
 ```
 
-## Read the Data
+### Read the Data
 
 ```
 !pip install scanpy
@@ -37,7 +37,7 @@ gene_idx = genes.get_loc("Myl2")
 print(gene_idx)
 ```
 
-### Visualization with `Spateo`
+#### Visualization with `Spateo`
 
 ```
 ! pip install spateo-release
@@ -82,7 +82,7 @@ For more 3D visualization/animation details, please go to [Animation](https://un
 
 ---
 
-# Step1: Train GAE
+## Step1: Train GAE
 
 ```
 ! python train.py --mode embedder --conf ./configs/ST/embedder_gae_3d_sparse.yaml
@@ -157,13 +157,13 @@ These parameters are used to handle **sparse z-direction in 3D spatial transcrip
   normalized_z = normalized_z * z_scale_factor  # Apply scaling factor
   ```
 
-# Step2: Train INR + fine-tune GAE
+## Step2: Train INR + fine-tune GAE
 
 ```
 ! python train.py --mode inr --conf ./configs/ST/inr_embd_3d_sparse.yaml
 ```
                                                                       
-# Step3: Prediction/Imputation
+## Step3: Prediction/Imputation
 
 #### Prepare normalized custom coords
 
