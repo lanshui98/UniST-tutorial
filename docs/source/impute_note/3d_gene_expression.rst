@@ -8,6 +8,7 @@ Gene Imputation (3D)
    hardware configuration.
 
 #### Installation
+
 ```
 !git clone https://github.com/lanshui98/UniST.git
 %cd UniST
@@ -23,6 +24,7 @@ Put the adata under external/SUICA_pro/data/.
 ```
 
 #### Read the data
+
 ```
 !pip install scanpy
 import scanpy as sc
@@ -36,6 +38,7 @@ print(gene_idx)
 ```
 
 ##### Visualization with `Spateo`
+
 ```
 ! pip install spateo-release
 import spateo as st
@@ -69,17 +72,20 @@ st.pl.three_d_plot(
 For more 3D visualization/animation details, please go to [Animation]('https://unist-tutorial.readthedocs.io/en/latest/tutorial.html').
 
 #### Step1: Train GAE
+
 ```
 ! python train.py --mode embedder --conf ./configs/ST/embedder_gae_3d_sparse.yaml
 ```
 
 #### Step2: Train INR + fine-tune GAE
+
 ```
 ! python train.py --mode inr --conf ./configs/ST/inr_embd_3d_sparse.yaml
 ```
                                                                       
 #### Step3: Prediction/Imputation
 Prepare normalized custom coords
+
 ```
 ! python prepare_custom_coords.py --mode 3d --reference data/3D_data.h5ad --coords your_coords.xyz --output data/preprocessed_data/custom_coords_3d_norm.npy --keep_ratio True --preserve_z_scale True --z_scale_factor 1.5
 ```
