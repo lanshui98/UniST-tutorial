@@ -4,7 +4,7 @@ This tutorial performs continuous gene expression reconstruction via Graph Autoe
 predicted and ground-truth gene expression.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Contents:
 
    Gene imputation on 2D spatial transcriptomics data <impute_note/2d_gene_imputation>
