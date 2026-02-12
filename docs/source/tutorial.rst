@@ -4,6 +4,9 @@ Tutorial
 This page provides links to step-by-step tutorials for key components of **UniST**.
 Click any card below to jump to the corresponding tutorial.
 
+Core Reconstruction Modules
+---------------------------
+
 .. grid:: 2 3 3 3
    :gutter: 3
 
@@ -44,6 +47,12 @@ Click any card below to jump to the corresponding tutorial.
       .. image:: _static/gene_expression.png
          :width: 100%
          :align: center
+
+Downstream Analysis & Visualization
+-----------------------------------
+
+.. grid:: 2 3 3 3
+   :gutter: 3
 
    .. grid-item-card::
       :link: cell_annotation
