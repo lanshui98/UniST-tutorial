@@ -251,7 +251,7 @@ Fourier Feature Encoding Parameters for sparse z-direction:
 #### Prepare normalized custom coords
 
 ```
-! python prepare_custom_coords.py --mode 3d --reference data/3D_data.h5ad --coords your_coords.xyz --output data/preprocessed_data/custom_coords_3d_norm.npy --keep_ratio True --preserve_z_scale True --z_scale_factor 1.5
+! python prepare_custom_coords.py --mode 3d --reference data/3D_data.h5ad --coords data/3D_coords.xyz --output data/preprocessed_data/custom_coords_3d_norm.npy --keep_ratio True --preserve_z_scale True --z_scale_factor 1.5
 ```
 
 #### Run prediction
@@ -268,10 +268,59 @@ Fourier Feature Encoding Parameters for sparse z-direction:
 
 #### Visualize the fitted embeddings
 ```
+res = sc.read("logs/GAE+FFN-3D-sparse/3d_sparse/lightning_logs/version_1/reconstructed-original-3d.h5ad")
+res.obs["emb1"] = res.obsm["fitted_embd"][:, 0]
+res.obs["emb1"] = res.obsm["fitted_embd"][:, 0].toarray().flatten()
 
+pc, cmap = st.tdr.construct_pc(
+    adata=res,
+    spatial_key="spatial",
+    groupby="emb1", 
+    colormap="viridis_r",
+)
+
+st.pl.three_d_plot(
+    model=pc,
+    key="emb1",              
+    colormap="viridis_r",        
+    model_style="points",
+    model_size=4.0,
+    show_legend=True,
+    jupyter="trame",
+    opacity=0.5
+)
+```
+
+```{figure} figs/3D_emb1_pred.png
+:width: 70%
+:align: center
 ```
 
 #### Visualize the result
+
+```
+res.obs["gene1"] = res.obsm["reconstructed_raw"][:, 0]
+
+pc, cmap = st.tdr.construct_pc(
+    adata=res,
+    spatial_key="spatial",
+    groupby="gene1", 
+    colormap="hot_r",
+)
+
+st.pl.three_d_plot(
+    model=pc,
+    key="gene1",              
+    colormap="hot_r",        
+    model_style="points",
+    model_size=4.0,
+    show_legend=True,
+    jupyter="trame",
+    opacity=0.5
+)
 ```
 
+```{figure} figs/3D_gene1_pred.png
+:width: 70%
+:align: center
 ```
