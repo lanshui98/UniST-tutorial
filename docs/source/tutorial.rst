@@ -115,3 +115,15 @@ Downstream Analysis & Visualization
       .. image:: _static/animation.png
          :width: 70%
          :align: center
+
+   .. grid-item-card::
+      :link: quant
+      :link-type: doc
+
+      .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
+
+         **Quantitative Assessment**
+
+      .. image:: _static/quant.png
+         :width: 70%
+         :align: center
