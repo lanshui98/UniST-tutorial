@@ -35,11 +35,15 @@ gene_idx = genes.get_loc("Myl2")
 print(gene_idx)
 ```
 
-#### Visualization with `Spateo`
+#### Visualization
 
 ```
-! pip install spateo-release
-import spateo as st
+from unist.downstream.vis import construct_pc, three_d_plot
+```
+
+```
+# if you encounter: initialized module 'pyvista' has no attribute '_plot', try this:
+!python scripts/patch_pyvista_circular_import.py
 ```
 
 ```
@@ -47,7 +51,7 @@ adata.obs["Myl2"] = adata.X[:,gene_idx].toarray().copy()
 ```
 
 ```
-pc, cmap = st.tdr.construct_pc(
+pc, cmap = construct_pc(
     adata=adata,
     spatial_key="spatial",
     groupby="Myl2",
@@ -56,7 +60,7 @@ pc, cmap = st.tdr.construct_pc(
 ```
 
 ```
-st.pl.three_d_plot(
+three_d_plot(
     model=pc,
     key="Myl2",
     colormap="hot_r",
@@ -91,14 +95,14 @@ For more 3D visualization/animation details, please go to [Animation](https://un
 emb = sc.read('logs/GAE-3D-sparse/3d_sparse/lightning_logs/version_0/embedded-all.h5ad')
 emb.obs["emb1"] = emb.obsm["embeddings"][:, 0]
 
-pc, cmap = st.tdr.construct_pc(
+pc, cmap = construct_pc(
     adata=emb,
     spatial_key="spatial",
     groupby="emb1", 
     colormap="viridis_r",
 )
 
-st.pl.three_d_plot(
+three_d_plot(
     model=pc,
     key="emb1",              
     colormap="viridis_r",        
@@ -272,14 +276,14 @@ res = sc.read("logs/GAE+FFN-3D-sparse/3d_sparse/lightning_logs/version_1/reconst
 res.obs["emb1"] = res.obsm["fitted_embd"][:, 0]
 res.obs["emb1"] = res.obsm["fitted_embd"][:, 0].toarray().flatten()
 
-pc, cmap = st.tdr.construct_pc(
+pc, cmap = construct_pc(
     adata=res,
     spatial_key="spatial",
     groupby="emb1", 
     colormap="viridis_r",
 )
 
-st.pl.three_d_plot(
+three_d_plot(
     model=pc,
     key="emb1",              
     colormap="viridis_r",        
@@ -301,14 +305,14 @@ st.pl.three_d_plot(
 ```
 res.obs["gene1"] = res.obsm["reconstructed_raw"][:, 0]
 
-pc, cmap = st.tdr.construct_pc(
+pc, cmap = construct_pc(
     adata=res,
     spatial_key="spatial",
     groupby="gene1", 
     colormap="hot_r",
 )
 
-st.pl.three_d_plot(
+three_d_plot(
     model=pc,
     key="gene1",              
     colormap="hot_r",        
