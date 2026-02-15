@@ -10,5 +10,3 @@ predicted and ground-truth gene expression at `Quantitative Assessment <https://
    Gene imputation on 2D spatial transcriptomics data <impute_note/2d_gene_imputation>
 
    Gene imputation on 3D spatial transcriptomics data <impute_note/3d_gene_imputation>
-
-   Accuracy quantification <impute_note/quantification>
