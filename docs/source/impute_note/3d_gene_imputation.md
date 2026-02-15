@@ -68,6 +68,7 @@ three_d_plot(
     model_size=4.0,
     show_legend=True,
     jupyter="trame",
+    legend_loc="center right",
     opacity=0.5
 )
 ```
@@ -110,6 +111,7 @@ three_d_plot(
     model_size=4.0,
     show_legend=True,
     jupyter="trame",
+    legend_loc="center right",
     opacity=0.5
 )
 ```
@@ -291,6 +293,7 @@ three_d_plot(
     model_size=4.0,
     show_legend=True,
     jupyter="trame",
+    legend_loc="center right",
     opacity=0.5
 )
 ```
@@ -320,6 +323,7 @@ three_d_plot(
     model_size=4.0,
     show_legend=True,
     jupyter="trame",
+    legend_loc="center right",
     opacity=0.5
 )
 ```
