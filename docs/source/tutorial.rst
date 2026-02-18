@@ -93,14 +93,14 @@ Downstream Analysis & Visualization
          :align: center
 
    .. grid-item-card::
-      :link: vis_paraview
+      :link: quant
       :link-type: doc
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-         **ParaView Visualization**
+         **Quantitative Assessment**
 
-      .. image:: _static/vis_paraview.png
+      .. image:: _static/quant.png
          :width: 70%
          :align: center
 
@@ -117,13 +117,14 @@ Downstream Analysis & Visualization
          :align: center
 
    .. grid-item-card::
-      :link: quant
+      :link: vis_paraview
       :link-type: doc
 
       .. div:: sd-font-weight-bold sd-fs-6 sd-text-center sd-mb-3
 
-         **Quantitative Assessment**
+         **ParaView Visualization**
 
-      .. image:: _static/quant.png
+      .. image:: _static/vis_paraview.png
          :width: 70%
          :align: center
+
