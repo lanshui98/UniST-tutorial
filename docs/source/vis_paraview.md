@@ -7,7 +7,7 @@ ParaView is frequently used to visualize 3D data with the capacity to efficientl
   <source src="_static/demo1.mp4" type="video/mp4">
 </video>
 
-<br>
+<div style="height:20px;"></div>
 
 ### Tumor Boundary After Morphological Erosion
 <video width="600" controls autoplay loop>
