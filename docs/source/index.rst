@@ -19,8 +19,6 @@ Get start
 
    tutorial
 
-   api
-
    GitHub <https://github.com/lanshui98/UniST>
 
 .. note::
