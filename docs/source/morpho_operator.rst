@@ -6,4 +6,4 @@ This module provides 3D morphological operations, including closing, dilation, a
    :maxdepth: 2
    :caption: Contents:
 
-   <morph/morpho_operator>
+   morph/morpho_operator
