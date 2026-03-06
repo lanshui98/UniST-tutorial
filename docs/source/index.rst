@@ -20,7 +20,3 @@ Get start
    tutorial
 
    GitHub <https://github.com/lanshui98/UniST>
-
-.. note::
-
-   This tutorial is under active development.
