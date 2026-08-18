@@ -17,6 +17,8 @@ Get start
 
    installation
 
+   quick_start
+
    tutorial
 
    GitHub <https://github.com/lanshui98/UniST>
